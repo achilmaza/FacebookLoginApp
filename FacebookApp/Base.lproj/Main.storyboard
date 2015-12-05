@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MQf-ZA-vco">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View ControllerFB-->
+        <scene sceneID="88H-te-PFY">
+            <objects>
+                <viewController id="MQf-ZA-vco" customClass="ViewControllerFB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aIQ-yB-Z1D"/>
+                        <viewControllerLayoutGuide type="bottom" id="kTm-XR-CzH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WON-J0-KPX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBZ-sh-Dig">
+                                <rect key="frame" x="158" y="131" width="240" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="ZLB-6F-vIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.58335306186868685" green="0.58335306186868685" blue="0.58335306186868685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="167" y="75" width="221" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdR-YU-cVa" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="84" y="634" width="246" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="91" y="623" width="232" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR7-dC-XYy">
+                                <rect key="frame" x="25" y="232" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.23302395470000001" green="0.4034972242" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0Zl-7b-FKW"/>
+                                    <constraint firstAttribute="height" constant="30" id="gEr-VZ-bc6"/>
+                                </constraints>
+                                <state key="normal" title="Post Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="201" width="104" height="38"/>
+                                </variation>
+                            </button>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IS9-bw-buQ" customClass="FBSDKProfilePictureView">
+                                <rect key="frame" x="25" y="87" width="100" height="100"/>
+                                <color key="backgroundColor" red="1" green="0.27360142110000002" blue="0.2631172249" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3Jy-g2-vrC"/>
+                                    <constraint firstAttribute="width" constant="100" id="PHx-3M-hS5"/>
+                                </constraints>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="41" y="75" width="100" height="100"/>
+                                </variation>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAs-aN-X2K">
+                                <rect key="frame" x="158" y="87" width="240" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.23302395469351922" green="0.40349722422061529" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="167" y="113" width="221" height="23"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gdR-YU-cVa" firstAttribute="leading" secondItem="WON-J0-KPX" secondAttribute="leadingMargin" constant="64" id="3ol-XY-5bU"/>
+                            <constraint firstItem="hBZ-sh-Dig" firstAttribute="trailing" secondItem="WON-J0-KPX" secondAttribute="trailingMargin" id="6tB-CB-bVJ"/>
+                            <constraint firstItem="oAs-aN-X2K" firstAttribute="trailing" secondItem="WON-J0-KPX" secondAttribute="trailingMargin" id="LBt-2B-XYn"/>
+                            <constraint firstItem="GR7-dC-XYy" firstAttribute="top" secondItem="IS9-bw-buQ" secondAttribute="bottom" constant="45" id="TYe-1u-8PR"/>
+                            <constraint firstItem="IS9-bw-buQ" firstAttribute="top" secondItem="aIQ-yB-Z1D" secondAttribute="bottom" constant="67" id="XdS-lQ-Ii1"/>
+                            <constraint firstItem="hBZ-sh-Dig" firstAttribute="top" secondItem="oAs-aN-X2K" secondAttribute="bottom" constant="21" id="bjS-lA-PHn"/>
+                            <constraint firstItem="kTm-XR-CzH" firstAttribute="top" secondItem="gdR-YU-cVa" secondAttribute="bottom" constant="72" id="f33-EZ-xm4"/>
+                            <constraint firstItem="hBZ-sh-Dig" firstAttribute="leading" secondItem="IS9-bw-buQ" secondAttribute="trailing" constant="33" id="idZ-CF-P4Y"/>
+                            <constraint firstItem="IS9-bw-buQ" firstAttribute="leading" secondItem="WON-J0-KPX" secondAttribute="leadingMargin" constant="9" id="o3q-Ef-XfT"/>
+                            <constraint firstItem="oAs-aN-X2K" firstAttribute="top" secondItem="aIQ-yB-Z1D" secondAttribute="bottom" constant="67" id="pD1-Jg-V2l"/>
+                            <constraint firstItem="oAs-aN-X2K" firstAttribute="leading" secondItem="IS9-bw-buQ" secondAttribute="trailing" constant="33" id="pdv-aT-Q3c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gdR-YU-cVa" secondAttribute="trailing" constant="64" id="sww-aU-p9b"/>
+                            <constraint firstItem="GR7-dC-XYy" firstAttribute="leading" secondItem="WON-J0-KPX" secondAttribute="leadingMargin" constant="9" id="zVK-KP-80h"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="fbEmail" destination="hBZ-sh-Dig" id="Sj1-wo-mvN"/>
+                        <outlet property="fbFullname" destination="oAs-aN-X2K" id="Gqr-Nf-zNU"/>
+                        <outlet property="fbLoginButton" destination="gdR-YU-cVa" id="K4b-8x-UB1"/>
+                        <outlet property="fbPostPhoto" destination="GR7-dC-XYy" id="FqC-nj-XQO"/>
+                        <outlet property="fbProfilePicture" destination="IS9-bw-buQ" id="2l8-WV-bVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0r-pd-TG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="-455"/>
+        </scene>
+    </scenes>
+</document>
